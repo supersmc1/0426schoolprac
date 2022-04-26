@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      margin:0;
+      padding:0;
+    }
+
+    .table{
+      width: 52vw;
+      height: 70vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .table>div{
+      width: 25vw;
+      height: 60vh;
+      
+    }
+
+    .table>div:nth-child(1){
+      background-color:lightgreen;
+    }
+
+    .one{
+      width: 34vw;
+      height: 13vh;
+    }
+
+    .one>h1{
+      font-size: 60px;
+      color: lightgreen;
+    }
+
+    .one>p{
+      color: lightgreen;
+    }
+
+    .two{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 33vw;
+      height: 43vh;
+    }
+
+
+    .two>div{
+      width: 10vw;
+      height: 10vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      background-color: lightgreen;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="table">
+    <div></div>
+
+    <div>
+      <div class="one">
+        <h1>lorem title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos accusantium voluptatem maxime nihil aliquid laudantium exercitationem atque, vitae porro? Accusantium quam rerum voluptatem nobis temporibus exercitationem labore quisquam debitis excepturi.</p>
+      </div>
+      <div class="two">
+        <div>thum</div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.body.style.width = "100vw";
+    document.body.style.height = "100vh";
+    document.body.style.display = "flex";
+    document.body.style.justifyContent = "center";
+    document.body.style.alignItems = "center";
+    document.body.style.margin = "0px";
+    document.body.style.padding = "0px";
+//문서 바디 스타일 지정
+
+    let table = document.getElementsByClassName("table");
+    //console.log(table);
+    //console.dir(table);
+    let table2 = table[0].Children[1];
+    //console.log(table2);
+    console.dir(table2)
+   
+
+    
+  </script>
+</body>
+</html>
